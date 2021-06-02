@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TopRated />
+  <UpComing/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopRated from './components/TopRated'
+import UpComing   from './components/UpComing'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    TopRated,
+    UpComing
+  },
+  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container.heading {
+  color: aliceblue;
+  overflow: hidden;
+}
+.container::-webkit-scrollbar {
+  width: 20px;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
 </style>
